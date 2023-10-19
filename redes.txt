@@ -1,0 +1,57 @@
+REDES DE COMPUADORES
+
+0 [ numero da rede  |  numero do host  ]
+
+classes A, B e C
+
+A 1   - 127
+B 128 - 191
+C 192 - 223
+
+hipervisores tipo 1: é o proprio sistema, profissional
+
+hipervisores tipo 2: uma aplicação normal do pc, nao recomendado para trabalho profissionais 
+
+
+host-only: pc comunica com maquina virtual, mas nao acessa a internet
+
+bridged: tudo pode se comunicar
+
+internal: apenas comunicação entre maquinas virtuais
+
+
+name: djr
+password: 654123
+
+#super user
+sudo su
+
+#inicializa a interface grafica
+startx
+
+#saber endereço ip
+ifconfig
+
+#nao sei o que faz
+dhclient eth1
+
+IPs:
+    dut    192.168.56.101
+    docker 192.168.56.106
+
+
+#testando se pode comunicar com outra MV
+ping (ip)
+
+iperf -s -P 0 -i l -f k > CEN1.txt
+
+iperf -c 192.168.56.101 -t 10
+
+
+    ç+--=
+ O__|
+/|
+ |
+/ \
+
+
